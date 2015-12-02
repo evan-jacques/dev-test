@@ -35,7 +35,7 @@
 	<?php
 	$servername = "localhost";
 	$username = "root";
-	$password = "golf2004";
+	$password = "********";
 	$dbname = "devtest";
 
 	// Create connection
@@ -160,7 +160,7 @@
     }
 	//createInfo($fnames,$lnames,$cities, $conn);
 	
-	$conn->close();
+	//$conn->close();
 	?>
 	<div class="results">
 
@@ -178,19 +178,6 @@
 		<th>SIN</th>
 	</tr>
 	<?php
-
-	$servername = "localhost";
-	$username = "root";
-	$password = "golf2004";
-	$dbname = "devtest";
-
-	// Create connection
-	$conn = new mysqli($servername, $username, $password,$dbname);
-
-	// Check connection
-	if ($conn->connect_error) {
-	    die("Connection failed: " . $conn->connect_error);
-	} 
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	    // collect value of input field
